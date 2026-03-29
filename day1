@@ -1,0 +1,52 @@
+#第一部分
+#变量message=后面一大串（赋值给message）（变量是标签）
+#赋值可以多次，可以修改，Python记住的是最新值
+#变量可以由数字，字母，下划线组成，但是不能数字开头，里面也不能有空格和Python已经有的东西
+message = 'hello python world'
+print(message)
+message = 'hello world'
+print(message)
+
+#引号可以嵌套，但是必须区分开
+message = 'I told my friends, "python is a languange"'
+print(message)
+
+#字符串方法（修改大小写）
+name = 'ada lovelace'
+print(name.title())
+print(name.upper())
+print(name.lower())
+
+#字符串中引用变量
+firstname = 'ada'
+lastname = 'lovelace'
+fullname = f'{firstname} {lastname}'
+print(fullname)
+print(f'hello,{fullname.title()}!')
+
+#制表符与换行符
+print('lan:\n\tpython\n\tc\n\tjava')
+
+#删除空白
+fav = 'python   '
+fav = fav.strip()
+print(fav)
+
+#删除前缀
+url = 'https://nostarch.com'
+url.removeprefix('https://')
+print(url)
+
+#计算：+ - * / ** // %（加减乘除，乘方，整除，取余数）
+#只要有操作数是浮点数，默认得到的就是浮点数。
+#可以在数字中添加下划线区分，不影响读取
+universe_age = 14_000_000_000
+print(universe_age)
+
+#变量赋多值和常量
+x, y, z, = 0, 0, 0,
+print(x)
+print(y)
+print(z)
+MAX_CONNECTIONS = 5000
+print(MAX_CONNECTIONS)
